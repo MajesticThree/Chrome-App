@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Majestic 3",
+    "description": "",
+    "version": "1.0.0.4",
+    "icons": {
+        "128": "images/128.png",
+        "48": "images/48.png",
+        "16": "images/16.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "images/16.png",
+            "48": "images/48.png",
+            "128": "images/128.png"
+        },
+        "default_title": "title",
+        "default_popup": "createcontact.html"
+    },
+    "permissions": ["storage", "http://*/", "https://*/"],
+
+    "minimum_chrome_version": "28"
+}

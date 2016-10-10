@@ -1,0 +1,326 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
+
+html *{
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h1 {
+    font-size: 20px;
+    color: rgb(53,144,198);
+    font-weight: 300;
+    margin-top: -20px;
+    margin-bottom: 35px;
+    position: relative;
+    text-align: left;
+    font-family: 'Raleway';
+}
+
+h1 span {
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(53,144,198);
+    z-index: -1;
+}
+
+body div.create_contact, body div.options {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    transform-origin: 0 0;
+}
+
+body.create_contact div.options {
+    left: 500px;
+    transform: scale(0.5);
+}
+body.create_contact div.create_contact {
+    left: 0px;
+    transform: scale(1);
+}
+body.options div.create_contact {
+    left: -500px;
+    transform: scale(0.5);
+}
+body.options div.options {
+    left: 0px;
+    transform: scale(1);
+}
+
+body {
+    height: 100%;
+    font-family: 'Raleway';
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgb(53,144,198) 0px, rgb(53,144,198) 20px, 
+        #5766b8 20px, #5766b8 40px, 
+        #465297 40px, #465297 60px, 
+        white 60px, white 139px
+        );
+    background-repeat: no-repeat;
+}
+
+.navbar-fixed-top {
+    top: 75px;
+    padding: 22px;
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+body.search_contact .alert.navbar-fixed-bottom, .search_contact .create_contact{
+    display: none;
+}
+
+body.create_contact .search_contact {
+    display: none;
+}
+
+body div table {
+    text-align: left;
+    table-layout: fixed;
+}
+
+section {
+    padding: 26px;
+    margin-bottom: 50px;
+    overflow: visible;
+}
+
+body div td {
+    padding-bottom: 17px;
+    vertical-align: top;
+}
+
+body .search_contact td {
+    padding-bottom: 10px;
+}
+
+.search_contact table {
+    text-align: left;
+    cursor: pointer;
+}
+
+.search_contact table td {
+    padding: 17px;
+}
+
+.search_contact table tr:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+.search_contact table tr.selected {
+    background: rgb(53, 144, 198);
+    color: white;
+}
+
+.navbar, .alert {
+    border-radius: 0;
+    text-align: center;
+}
+
+
+body, section {
+    width: 500px;
+    /*height: 800px;*/
+    /*overflow-x: hidden;*/
+}
+
+.btn {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+td:nth-of-type(1) {
+    padding-right: 12px;
+}
+
+table tr:last-of-type td {
+    padding-bottom: 0;
+}
+
+.navbar { 
+    margin-bottom: 2px; 
+    background: none;
+    color: rgb(53,144,198);
+    border: none;
+    position: relative;
+    /*border-bottom: 1px solid rgb(53,144,198);*/
+    text-align: center;
+}
+
+.navbar i {
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar i {
+    right: 22px;
+    top: 22px;
+    transition: all 0.5s;
+}
+
+body.create_contact i.back {
+    opacity: 0;
+}
+body.options i.back {
+    opacity: 1;
+}
+body.options i.options {
+    opacity: 0;
+}
+
+i.rotate {
+    transform: rotate(180deg);
+}
+
+
+.navbar-brand {
+    padding: 20px;
+    padding-top: 10px;
+    height: 80px;
+    float: none;
+}
+
+.navbar h2 {
+    margin-top: 14px;
+    color: white;
+    margin-left: 30px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: lightgrey; }
+
+.has-error {
+    color: red;
+    background-color: #FAD3C5;
+    padding: 4px;
+}
+
+#btn-options-form {
+    float: right;
+}
+
+.alert {
+    margin-bottom: 0;
+    animation: all 5s;
+}
+
+.pulse-button {
+    position: relative;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(53, 144, 198, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s 2 cubic-bezier(0.1, 0, 0, 1);
+    -moz-animation: pulse 1.25s 2 cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s 2 cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s 2 cubic-bezier(0.1, 0, 0, 1);
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(0, 255, 0, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(0, 255, 0, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(0, 255, 0, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(0, 255, 0, 0);}}
+
+button {
+    background-colour: rgb(53, 144, 198);
+}
+
+.alert-info {
+    background-color: rgb(53, 144, 198);
+}
+
+.alert button {
+    border: 2px solid white;
+    border-radius: 1px;
+    color: white;
+    background-color: transparent;
+}
+
+
+.fa-spinner {
+    color: rgb(53, 144, 198);
+}
+
+.navbar-fixed-bottom {
+    padding: 10px;
+}
+
+
+
+
+/*FORM INPUTS*/
+
+input[type="text"], input[type="password"], textarea {
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid lightgrey;
+    box-shadow: none;
+}
+
+input[type="text"]:active, input[type="text"]:focus, input[type="password"]:active , input[type="password"]:focus, textarea:active, textarea:focus {
+    box-shadow: none;
+    color: black;
+    border-bottom-color: rgb(53, 144, 198);
+}
+
+label {
+    color: rgb(53, 144, 198);
+}
+
+
+td div, .form-group { 
+    position:relative; 
+    margin-bottom:45px; 
+}
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+input:focus { outline:none; }
+
+label {
+    color:#999; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:6px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label, select ~ label, textarea:focus ~ label, textarea.valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}

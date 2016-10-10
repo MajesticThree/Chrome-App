@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Scripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="checkoptions.js"></script>
+        <script src="common.js"></script>
+        <script src="background.js"></script>
+        <script src="options.js"></script>
+        <script src="ui.js"></script>
+        <script src="scraper.js"></script>
+        <script src="search.js"></script>
+        <script src="form.js"></script>
+        <script src="alertbox.js"></script>
+
+        <!-- Cascading Style Sheets -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    </head>
+    <body class="create_contact">
+        <nav class="navbar navbar-inverse navbar-top" role="navigation">
+            <i class="fa fa-arrow-right back" aria-hidden="true"></i>
+
+            <img class="navbar-brand" src="images/menulogo.svg" />
+            <!--            <div id="search">
+                            <input type="text" id="search-bar" placeholder="Search..." />
+                        </div>-->
+            <i class="fa fa-cog options" aria-hidden="true"></i>
+
+        </nav>
+        <div class="navbar-fixed-top" id="top_bar"></div>
+        <div class="create_contact">
+            <section>
+                <div class="col-md-9">
+                    <div role="form" id="create-contact-form">
+                        
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="search_contact">
+            <table>
+
+            </table>
+        </div>
+
+        <div class="view_contact">
+
+        </div>
+
+        <div class="options">
+            <section>
+                <div role="form" id="authenticate-form">
+                    <h1><span>Options</span></h1>
+                    <table>
+                        <tr>
+                            <td class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" id="api_name" required="required" value=""/>
+                                    <label for="api_name">Username</label>
+                                </div>
+                            </td>
+
+                            <td class="form-group">
+                                <div>
+                                    <input value="" type="password" class="form-control" id="api_pass" required="required" value=""/>
+                                    <label for="api_pass">Password</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" id="api_frontend" required="required"/>
+                                    <label for="api_frontend">Frontend URL</label>
+                                    <small class="text-muted">E.g. https://journeys.yourdomain.com</small>
+                                </div>
+                            </td>
+                            <td class="form-group">
+                                <div>
+                                    <input value="https://g2digit-core-eu-west-1.majestic3.com" type="text" class="form-control" id="api_url" required="required" value="http://api.majestic3.local"/>
+                                    <label for="api_url">Profile URL</label>
+                                    <small class="text-muted">E.g. https://api-demo.majestic3.com</small>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" id="api_key" required="required" value=""/>
+                                    <label for="api_key">API Key</label>
+                                </div>
+                            </td>
+
+                            <td class="form-group">
+                                <div>
+                                    <select class="form-control" id="default_form"></select>
+                                    <label for="form">Default Form</label>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" id="btn-authenticate-form" class="btn btn-primary" value="Submit"/>
+
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
